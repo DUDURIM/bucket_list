@@ -17,3 +17,5 @@ bucket_list는 직접 버킷리스트 목록을 추가, 완료, 삭제가 가능
 git push origin +master 입력으로 강제 푸쉬를 진행하면 된다.
 
 https://dudurim.github.io/bucket_list/
+
+https://dudu-react-basic-f61c1.web.app/
