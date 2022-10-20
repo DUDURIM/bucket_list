@@ -26,26 +26,22 @@ const Detail = (props) => {
       variant="outlined"
       color="primary" 
       onClick={() => {
-        // dispatch(updateBucket(bucket_index));
+        dispatch(updateBucket(bucket_index));
         dispatch(updateBucketFB(bucket_list[bucket_index].id));
+        history.goBack();
       }}>완료하기</Button>
       
       <Button
       variant="outlined"
       color="secondary"
         onClick={() => {
-          //   dispatch(); <- 괄호안에는 액션 생성 함수가 들어가야겠죠?
-          // 예를 들면 이렇게요.
-          dispatch(deleteBucketFB(bucket_list[bucket_index].id));
-          
-          
+          //   dispatch(); <- 괄호안에는 액션 생성 함수가 들어가야함
+          // 예시
           // console.log("삭제하기 버튼을 눌렀어!");
-          // dispatch(deleteBucket(bucket_index));
+          dispatch(deleteBucket(bucket_index));
+          dispatch(deleteBucketFB(bucket_list[bucket_index].id));
           history.goBack();
-        }}
-      >
-        삭제하기
-      </Button>
+          }}>삭제하기</Button>
     </div>
   );
 };

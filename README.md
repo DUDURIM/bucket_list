@@ -19,3 +19,9 @@ git push origin +master 입력으로 강제 푸쉬를 진행하면 된다.
 https://dudurim.github.io/bucket_list/
 
 https://dudu-react-basic-f61c1.web.app/
+
+
+babel-eslint 오류뜨면 
+$ npm install eslint --save-dev
+$ npm install babel-eslint --save-dev
+설치 진행후 yarn start

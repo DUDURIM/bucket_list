@@ -116,12 +116,14 @@ export default function reducer(state = initialState, action = {}) {
         case "bucket/LOAD": {
             return { list: action.bucket_list, is_loaded: true, };
         }
+        // 추가하기 부분
         case "bucket/CREATE": {
             console.log("이제 값을 바꿀거야!");
             const new_bucket_list = [...state.list, action.bucket];
             return { ...state, list: new_bucket_list, is_loaded: true };
         }
 
+        // 완료하기 부분
         case "bucket/UPDATE": {
             const new_bucket_list = state.list.map((l, idx) => {
                 if (parseInt(action.bucket_index) === idx) {
@@ -131,10 +133,10 @@ export default function reducer(state = initialState, action = {}) {
                 }
             })
             console.log({ list: new_bucket_list });
-            return { list: new_bucket_list };
+            return { ...state,list: new_bucket_list};
 
         }
-
+         // 삭제하기 부분
         case "bucket/DELETE": {
             const new_bucket_list = state.list.filter((l, idx) => {
                 return parseInt(action.bucket_index) !== idx;
