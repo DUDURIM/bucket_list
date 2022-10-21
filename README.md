@@ -25,3 +25,9 @@ babel-eslint 오류뜨면
 $ npm install eslint --save-dev
 $ npm install babel-eslint --save-dev
 설치 진행후 yarn start
+
+material 오류뜨면
+npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+설치 진행후 yarn start
+
+색상 #673ab7 변경도 가능

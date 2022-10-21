@@ -34,7 +34,7 @@ const ProgressBar = styled.div`
 `;
 
 const HighLight = styled.div`
-    background-color: #673ab7;
+    background-color: #a3a0a9;
     transition: 1s;
     width: ${(props) => props.width};
     height: 20px;
@@ -45,7 +45,7 @@ const Dot = styled.div`
     width: 40px;
     height: 40px;
     background: white;
-    border: 5px solid #673ab7;
+    border: 5px solid #a3a0a9;
     border-radius: 40px;
     margin: 0px 0px 0px -20px;
 `;

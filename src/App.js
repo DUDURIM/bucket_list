@@ -57,6 +57,7 @@ function App() {
     // dispatch(createBucket({text: text.current.value, completed: false}));
 
     dispatch(addBucketFB({text: text.current.value, completed: false}));
+    text.current.value="";
   };
 
   return (
@@ -116,14 +117,14 @@ const Input = styled.div`
 
   & input:focus {
     outline: none;
-    border: 1px solid #a673ff;
+    border: 1px solid #a3a0a9;
   }
 
   & button {
     width: 25%;
     color: #fff;
-    border: #a673ff;
-    background: #a673ff;
+    border: #a3a0a9;
+    background: #a3a0a9;
   }
 
 `;
@@ -139,7 +140,7 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
-  color: slateblue;
+  color: #a3a0a9;
   text-align: center;
 `;
 

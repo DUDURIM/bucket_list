@@ -21,19 +21,19 @@ const Detail = (props) => {
 
   return (
     <div>
-      <h1>{bucket_list[bucket_index]? bucket_list[bucket_index].text : "" }</h1>
+      <h1>{bucket_list[bucket_index] ? bucket_list[bucket_index].text : ""}</h1>
       <Button
-      variant="outlined"
-      color="primary" 
-      onClick={() => {
-        dispatch(updateBucket(bucket_index));
-        dispatch(updateBucketFB(bucket_list[bucket_index].id));
-        history.goBack();
-      }}>완료하기</Button>
-      
+        variant="outlined"
+        color="primary"
+        onClick={() => {
+          dispatch(updateBucket(bucket_index));
+          dispatch(updateBucketFB(bucket_list[bucket_index].id));
+          history.goBack();
+        }}>완료하기</Button>
+
       <Button
-      variant="outlined"
-      color="secondary"
+        variant="outlined"
+        color="secondary"
         onClick={() => {
           //   dispatch(); <- 괄호안에는 액션 생성 함수가 들어가야함
           // 예시
@@ -41,7 +41,14 @@ const Detail = (props) => {
           dispatch(deleteBucket(bucket_index));
           dispatch(deleteBucketFB(bucket_list[bucket_index].id));
           history.goBack();
-          }}>삭제하기</Button>
+        }}>삭제하기</Button>
+
+      <Button
+        variant="outlined"
+        color="success"
+        onClick={() => {
+          history.goBack();
+        }}>뒤로가기</Button>
     </div>
   );
 };

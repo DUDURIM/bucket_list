@@ -1,18 +1,20 @@
 import React from "react";
 import styled from  "styled-components";
-import {Eco} from "@material-ui/icons";
+// import {Eco} from "@material-ui/icons";
+import CellWifiIcon from '@mui/icons-material/CellWifi';
 const Spinner = (props) => {
     return (
         <Outter>
-            <Eco style={{
-                color: "#673ab7", fontSize: "150px",
+            {/* 아이콘 들어가는부분 */}
+            <CellWifiIcon style={{
+                color: "#efeff0", fontSize: "150px",
             }}/>
         </Outter>
     );
 }
 
 const Outter = styled.div`
-    background: #e5d6ff;
+    background: #a3a0a9;
     width: 100vw;
     height: 100vh;
     position: fixed;
