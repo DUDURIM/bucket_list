@@ -1,8 +1,29 @@
-bucket_list는 직접 버킷리스트 목록을 추가, 완료, 삭제가 가능합니다.
+<div align="center">
+<h1>Bucket_list</h1>
+<img width="750" alt="banner7" src="https://user-images.githubusercontent.com/87938427/198845052-c02d964f-d494-4838-9829-79b7e01da34f.png">
 
-이 페이지는 REACT를 사용했습니다.
+</div>
 
-감사합니다.
+## Bucket_list
+- 개인 프로젝트
+- 220301
+- Use: HTML, CSS, JavaScript, JQuery, Bootstrap, React.js, Firebase, AWS
+
+## 프로젝트 소개
+- Bucket_list 서비스란?
+- 직접 버킷리스트 목록을 추가, 완료, 삭제가 가능합니다.
+- Firebase를 이용하여 데이터를 연동해서 서비스를다해보았다.
+
+
+<div align="center">
+<h1>실행 및 오류 발생 해결법</h1>
+</div>
+</br>
+<div>
+웹사이트 주소 : https://dudu-react-basic-f61c1.web.app/
+</div>
+</br>
+<div>
 
 ** 실행시 오류 $ react-scripts start 'react-scripts'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는 배치 파일이 아닙니다. error Command failed with exit code 1.
 
@@ -31,3 +52,4 @@ npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
 설치 진행후 yarn start
 
 색상 #673ab7 변경도 가능
+
